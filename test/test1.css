@@ -1,0 +1,114 @@
+/* Grid Mixin */
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Global Styles */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+  
+  /* Global Reset */
+  * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+  }
+  
+  /* Colors */
+  :root {
+    --carrot-color: #e67222;
+    --black: #130f40;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+  }
+  
+  /* Grid Usage */
+  .container {
+    @include grid(300px); /* Adjust value as needed */
+  }
+  
+  /* Additional Global Styles */
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+  
+  /* Header */
+  .header {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1); /* Assuming $box-shadow is defined globally */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bolder;
+  }
+  
+  /* Navbar */
+  .navbar {
+    margin: 0 1rem; /* Adjust margin as needed */
+    font-size: 1.7rem;
+    color: var(--light-color);
+  }
+  
+  .navbar:hover {
+    color: var(--carrot-color);
+  }
+  
+  /* Icons */
+  .icons a,
+  .icons div {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+  }
+  
+  .icons a:hover,
+  .icons div:hover {
+    color: var(--carrot-color);
+  }
+  
+  /* Login Form */
+  .login-form {
+    position: absolute;
+    top: 120%;
+    right: 2rem;
+    width: 35rem;
+    border-radius: 1rem;
+    background: var(--white);
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1); /* Assuming $box-shadow is defined globally */
+    padding: 2rem;
+  }
+  
+  .login-form p {
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-bottom: 5rem;
+  }
+  
+  /* Menu Button */
+  #menu-btn {
+    display: none;
+  }
+  
