@@ -219,7 +219,7 @@ body {
 .dog-info {
   text-align: center; /* Center align the text */
   margin: 200px 0; /* Adjust the margin to move the whole section down */
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 .dog-info h2 {
@@ -297,11 +297,13 @@ body {
 /* Midhome section styling */
 
 .midhome {
-  background-color: #f5f5f5;
+  background-color: #000000;
+  color: #fff;
   padding: 50px;
   text-align: center;
   margin-top: 100px; /* Adjust as needed */
   opacity: 1; /* Initially set opacity to 1 */
+  border-radius: 300px;
 }
 
 .midhome h1 {
