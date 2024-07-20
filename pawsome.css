@@ -294,6 +294,63 @@ body {
 
 /* Dog-info styling */
 
+/* Midhome section styling */
+
+.midhome {
+  background-color: #f5f5f5;
+  padding: 50px;
+  text-align: center;
+  margin-top: 100px; /* Adjust as needed */
+  opacity: 1; /* Initially set opacity to 1 */
+}
+
+.midhome h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.midhome p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Midhome section styling */
+
+
+/* Dog-Toggle styling */
+
+ /* .toggle-switch-doghead {
+  width: 100px;
+  height: 40px;
+  background-color: #2e3b4e;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dog-head-doghead {
+  width: 40px;
+  height: 40px;
+  background-color: #fbc02d;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 0.3s, transform 0.3s;
+  background-image: url('/images/fav.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Initial state */
+.toggle-switch-doghead.active .dog-head-doghead {
+  left: 60px;
+  transform: rotate(360deg);
+} */
+
+/* Dog-Toggle styling */
+
+
 /* Wavy Banner Effects */
 /* section {
     position: relative;
@@ -345,33 +402,8 @@ section .wave2 {
     }
 } */
 
-/* Midhome section styling */
 
-.midhome {
-  background-color: #f5f5f5;
-  padding: 50px;
-  text-align: center;
-  margin-top: 100px; /* Adjust as needed */
-  opacity: 1; /* Initially set opacity to 1 */
-}
 
-.midhome h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.midhome p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
- {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-/* Midhome section styling */
 
 /* Video section styling */
 
@@ -392,4 +424,7 @@ section .wave2 {
   max-height: 100%;
   object-fit: cover; 
 }
- */
+
+/* Video section styling */
+
+ 
