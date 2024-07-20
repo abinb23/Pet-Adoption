@@ -370,7 +370,7 @@ section .wave2 {
 }
 
 .dog-image {
-  max-width: 60%; /* Increase size of the image */
+  max-width: 62%; /* Increase size of the image */
   height: auto;
   margin-right: 20px; /* Add margin to the right for spacing */
   border-radius: 15px; /* Adjust the radius for the desired curve */
