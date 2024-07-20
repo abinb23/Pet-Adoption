@@ -6,7 +6,7 @@
 
 /* Apply Roboto font to the entire website */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Header styling */
@@ -292,9 +292,7 @@ body {
   flex: 1;
 }
 
-
 /* Dog-info styling */
-
 
 /* Wavy Banner Effects */
 /* section {
@@ -347,8 +345,6 @@ section .wave2 {
     }
 } */
 
-
-
 /* Midhome section styling */
 
 .midhome {
@@ -369,14 +365,13 @@ section .wave2 {
   line-height: 1.6;
 }
 
-{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+ {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* Midhome section styling */
-
 
 /* Video section styling */
 
@@ -398,4 +393,3 @@ section .wave2 {
   object-fit: cover; 
 }
  */
-
