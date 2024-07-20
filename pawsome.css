@@ -342,16 +342,16 @@ body {
   background-position: center;
 }
 
-/* Initial state */
-.toggle-switch-doghead.active .dog-head-doghead {
+/* .toggle-switch-doghead.active .dog-head-doghead {
   left: 60px;
   transform: rotate(360deg);
-} */
+} */ 
 
 /* Dog-Toggle styling */
 
 
 /* Wavy Banner Effects */
+
 /* section {
     position: relative;
     width: 100%;
@@ -426,5 +426,3 @@ section .wave2 {
 }
 
 /* Video section styling */
-
- 
