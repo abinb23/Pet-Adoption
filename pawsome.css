@@ -400,6 +400,59 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 0px;
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+
+footer .menu li a {
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #000000;
+  min-height: 100px;
+  padding: 20px 50px 40px; /* Added bottom padding to make space for text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer .social_icon,
@@ -443,11 +496,13 @@ footer .menu li a:hover {
 }
 
 footer p {
-  color: #ffffff; /* Changed to white for contrast */
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 0px;
-  font-size: 1.1em;
+  position: absolute; /* Position it absolutely within the footer */
+  bottom: 0; /* Align it to the bottom */
+  width: 100%; /* Make it span the full width */
+  color: #ffffff; /* Text color */
+  text-align: center; /* Center align the text */
+  margin: 0; /* Remove all margins */
+  font-size: 1em; /* Font size */
 }
 
 footer .wave {
