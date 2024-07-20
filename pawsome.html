@@ -15,6 +15,9 @@
 </head>
 <body>
   
+
+  <!-- Header Section -->
+
   <div class="header">
     <a href="#" class="logo-link">
       <img src="/images/logo1.png" alt="Pawsome Logo" class="logo" />
@@ -57,14 +60,15 @@
     </div>
   </div>
 
+    <!-- Header Section -->
+  
   <!-- Slider section -->
-  <!-- Slider section -->
+
   <div class="swiper-container">
     <h1 class="slider-title" style="margin-top: 50px;">
       🐾 Welcome To Pawsome 🐾<br />A pet is the only thing on earth that
       loves you more than it loves itself.
     </h1>
-
 
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -77,6 +81,7 @@
         <img src="/images/cats/4.jpg" alt="Image 3" />
       </div>
     </div>
+
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
     <!-- Add Navigation -->
@@ -84,7 +89,9 @@
     <div class="swiper-button-prev"></div>
   </div>
 
-  
+    <!-- Slider section -->
+
+    <!-- Dog-Info section -->
 
   <section class="dog-info">
     <h2>Your Pet Adoption Journey begins with Pawsome </h2>
@@ -97,13 +104,13 @@
                 <div class="info-item">
                     <img src="/images/icons/1.jpg" alt="Search Pet Icon" class="info-icon">
                     <h3>Search Pet</h3>
-                    <p>Adopt a dog or cat who's right for you. Simply enter your city above to start your search.</p>
+                    <p>Adopt a dog or cat who's right for you. Simply enter the cat and dog section and scroll <br/>through the lists and find you love</p>
                 </div>
                 <br/>
                 <div class="info-item">
                     <img src="/images/icons/2.jpg" alt="Connect Icon" class="info-icon">
                     <h3>Connect</h3>
-                    <p>Once you find a pet, click "show number" to get contact info for their pet parent or rescue.<br/>Contact them to learn more about how to meet and adopt the pet.</p>
+                    <p>Once you find a pet, click on the picture to get contact info for their pet parent or rescue.<br/>Contact them to learn more about how to meet and adopt the pet.</p>
                 </div>
                 <br/>
                 <div class="info-item">
@@ -115,17 +122,22 @@
                 <div class="info-item">
                     <img src="/images/icons/4.jpg" alt="Free Vet Consultation Icon" class="info-icon">
                     <h3>Free Vet Consultation</h3>
-                    <p>ThePetNest will help your pet to settle down in its new home. Once you complete the adoption <br/>journey, reach out to us for free vet consultation.</p>
+                    <p>The Pawsome will help your pet to settle down in its new home. Once you complete the adoption <br/>journey, reach out to us for free vet consultation.</p>
                 </div> 
             </div>
         </div>
     </div>
 </section>
 
+    <!-- Dog-Info section -->
+
   <!-- <section>
     <div class="wave wave1"></div>
     <div class="wave wave2"></div>
 </section> -->
+
+
+    <!-- Mid-Home section -->
 
   <div class="midhome" id="midhome">
     <h1>Get Your Family a New Member.</h1>
@@ -224,7 +236,7 @@
   </div>
 
 
-
+    <!-- Mid-Home section -->
 
 
 
@@ -375,6 +387,10 @@
     </div>
   </div> -->
   <!-- Footer End -->
+
+
+      <!-- slider section -->
+
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".swiper-container", {
@@ -395,37 +411,8 @@
       },
     });
   </script>
-ax
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-  var midhome = document.getElementById("midhome");
-  var fadeDone = false;
 
-  function fadeInMidhome() {
-    console.log(!fadeDone,"fadeInMidhome",isScrolledIntoView(midhome))
-
-    if (!fadeDone && isScrolledIntoView(midhome)) {
-      midhome.classList.add("fade-in");
-      fadeDone = true;
-      window.removeEventListener("scroll", fadeInMidhome); // Remove the event listener
-    }else if(fadeDone && !isScrolledIntoView(midhome)){
-    midhome.classList.remove("fade-in");
-      fadeDone = false;
-    }
-  }
-
-  function isScrolledIntoView(el) {
-    var rect = el.getBoundingClientRect();
-    var elemTop = rect.top;
-    var elemBottom = rect.bottom;
-    var isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-    return isVisible;
-  }
-
-  window.addEventListener("scroll", fadeInMidhome);
-});
-
-  </script>
+      <!-- Slider section -->
 
 </body>
 </html>
