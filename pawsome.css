@@ -317,6 +317,65 @@ body {
 /* Midhome section styling */
 
 
+/* Q&A section styling */
+
+.questionnaire  {
+  margin: 60px auto;
+  width: 600px;
+}
+
+.questionnaire  li {
+  list-style: none;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background: #e3edf7;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.questionnaire  input[type="radio"] {
+  display: none;
+}
+
+.questionnaire  label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.questionnaire  label::before {
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.questionnaire  input[type="radio"]:checked + label::before {
+  content: '-';
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  color: #555;
+  line-height: 26px;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.questionnaire  input[type="radio"]:checked + label + .content {
+  max-height: 400px; /* Adjust based on content height */
+  padding: 10px 10px 20px;
+}
+
+/* Q&A section styling */
+
+
 /* Dog-Toggle styling */
 
  /* .toggle-switch-doghead {
