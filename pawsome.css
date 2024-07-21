@@ -396,7 +396,7 @@ body {
   margin: auto;
   padding: 2rem 1rem;
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
 }
 
 .testimonial__container h2 {
@@ -523,25 +523,21 @@ body {
 
 /* Testimonial Section Styling */
 
-
 /* Footer styling */
-
 footer {
   position: relative;
   width: 100%;
   background: #000000;
   min-height: 100px;
-  padding: 20px 50px;
+  padding: 3px 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 0px;
 }
 
 footer .social_icon,
 footer .menu {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -579,56 +575,25 @@ footer .menu li a:hover {
   opacity: 1;
 }
 
-footer {
-  position: relative;
-  width: 100%;
-  background: #000000;
-  min-height: 100px;
-  padding: 20px 50px 40px; /* Added bottom padding to make space for text */
+footer .footer-links {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: column; /* Display list items vertically */
+  align-items: flex-start; /* Align to the left */
+  width: 104%;
+  padding-left: -10px; /* Add padding to match footer padding */
+  margin-top: 100px;
+  margin: 0; /* Remove default margin */
 }
 
-footer .social_icon,
-footer .menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-}
-
-footer .social_icon li,
-footer .menu li {
+footer .footer-links li {
   list-style: none;
+  margin-bottom: 10px; /* Add space between items */
 }
 
-footer .social_icon li a {
-  font-size: 2em;
+footer .footer-links li a {
   color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-}
-
-footer .social_icon li a:hover {
-  transform: translateY(-10px);
-}
-
-footer .menu li a {
-  font-size: 1.2em;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
   text-decoration: none;
-  opacity: 0.75;
-}
-
-footer .menu li a:hover {
-  opacity: 1;
+  font-size: 16px;
 }
 
 footer p {
@@ -677,15 +642,22 @@ footer .wave#wave1 {
 }
 
 
+/* Footer styling -- social */
 
+.position-container {
+  position: relative;
+  height: 100vh; /* Adjust as needed */
+  width: 100vw; /* Adjust as needed */
+}
 
-
-
-
+/* Main footer styles */
 .mainfoot {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  position: absolute; /* Positioning for placement */
+  right: 20px; /* Adjust as needed */
+  bottom: 25px; /* Adjust as needed */
 }
 
 .upfoot, .downfoot {
@@ -695,8 +667,8 @@ footer .wave#wave1 {
 }
 
 button {
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   outline: none;
   border: none;
   background: white;
@@ -711,13 +683,13 @@ button {
 }
 
 .footinstagram {
-  margin-top: 1.5em;
+  margin-top: 1.2em;
   margin-left: 1.2em;
-  fill: #e900ab;
+  fill: #000000;
 }
 
 .cardfoot1:hover {
-  background-color: #ec53c3;
+  background-color: #ff00bb;
 }
 
 .cardfoot1:hover .instagram {
@@ -729,9 +701,9 @@ button {
 }
 
 .footfacebook {
-  margin-top: 1.5em;
-  margin-left: -.9em;
-  fill: #00aeff;
+  margin-top: 1.3em;
+  margin-left: -1em;
+  fill: #000000;
 }
 
 .cardfoot2:hover {
@@ -747,13 +719,13 @@ button {
 }
 
 .footwhatsapp {
-  margin-top: -.6em;
+  margin-top: -1.em;
   margin-left: 1.2em;
-  fill: #00ac2e;
+  fill: #000000;
 }
 
 .cardfoot3:hover {
-  background-color: #4cf64c;
+  background-color: #00ff00;
 }
 
 .cardfoot3:hover .whatsapp {
@@ -765,13 +737,13 @@ button {
 }
 
 .footgmail {
-  margin-top: -.9em;
-  margin-left: -1.2em;
-  fill: #cf1305;
+  margin-top: 1.5.em;
+  margin-left: -1em;
+  fill: #000000;
 }
 
 .cardfoot4:hover {
-  background-color: #ea5a5c;
+  background-color: #ff0004;
 }
 
 .cardfoot4:hover .gmail {
@@ -779,9 +751,11 @@ button {
 }
 
 
+/* Footer styling -- social */
 
 
-  /* Footer styling */
+/* Footer styling */
+
 
 
 /* Dog-Toggle styling */
