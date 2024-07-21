@@ -219,7 +219,7 @@ body {
 .dog-info {
   text-align: center; /* Center align the text */
   margin: 200px 0; /* Adjust the margin to move the whole section down */
-  margin-bottom: 140px;
+  margin-bottom: 0px;
 }
 
 .dog-info h2 {
@@ -304,6 +304,7 @@ body {
   margin-top: 140px; /* Adjust as needed */
   opacity: 1; /* Initially set opacity to 1 */
   border-radius: 300px;
+  margin-bottom: 0px;
 }
 
 .midhome h1 {
@@ -324,7 +325,7 @@ body {
 .questionnaire {
   margin: 60px auto;
   width: 600px;
-  margin-bottom: 250px;
+  margin-bottom: 150px;
 }
 
 .questionnaire h1 {
@@ -386,6 +387,141 @@ body {
 }
 
 /* Q&A Section Styling */
+
+
+/* Testimonial Section Styling */
+
+.testimonial__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.testimonial__container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #149e9e; /* Primary color */
+  margin-bottom: 10px;
+}
+
+.testimonial__container h1 {
+  position: relative;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #0f172a; /* Text dark color */
+}
+
+.testimonial__container h1::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 5rem;
+  background-color: #149e9e; /* Primary color */
+}
+
+.testimonial__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonial__card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 5rem 2rem 2rem;
+  background-color: #ffffff; /* White color */
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.testimonial__card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: #149e9e; /* Primary color */
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.testimonial__card span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 3rem;
+  color: #ffffff; /* White color */
+}
+
+.testimonial__card h4 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #149e9e; /* Primary color */
+  transition: 0.3s;
+}
+
+.testimonial__card p {
+  margin-bottom: 2rem;
+  color: #94a3b8; /* Text light color */
+  transition: 0.3s;
+}
+
+.testimonial__card img {
+  margin-bottom: 1rem;
+  max-width: 100px;
+  border-radius: 100%;
+  border: 2px solid #149e9e; /* Primary color */
+  transition: 0.3s;
+}
+
+.testimonial__card h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000000; /* Primary color */
+  transition: 0.3s;
+}
+
+.testimonial__card h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #94a3b8; /* Text light color */
+  transition: 0.3s;
+}
+
+.testimonial__card:hover::before {
+  background-color: #149e9e; /* Black color */
+  width: 400%;
+}
+
+.testimonial__card:hover h4,
+.testimonial__card:hover h5 {
+  color: #ffffff; /* White color */
+}
+
+.testimonial__card:hover p,
+.testimonial__card:hover h6 {
+  color: #e8e8e8; /* Secondary color */
+}
+
+.testimonial__card:hover img {
+  border-color: #ffffff; /* White color */
+}
+
+/* Testimonial Section Styling */
 
 
 /* Footer styling */
@@ -539,6 +675,109 @@ footer .wave#wave1 {
 .zoom li a:hover {
   transform: scale(1.1);
 }
+
+
+
+
+
+
+
+.mainfoot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.upfoot, .downfoot {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+button {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.cardfoot1 {
+  border-radius: 90px 5px 5px 5px;
+}
+
+.footinstagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #e900ab;
+}
+
+.cardfoot1:hover {
+  background-color: #ec53c3;
+}
+
+.cardfoot1:hover .instagram {
+  fill: white;
+}
+
+.cardfoot2 {
+  border-radius: 5px 90px 5px 5px;
+}
+
+.footfacebook {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #00aeff;
+}
+
+.cardfoot2:hover {
+  background-color: #2e82f0;
+}
+
+.cardfoot2:hover .facebook {
+  fill: white;
+}
+
+.cardfoot3 {
+  border-radius: 5px 5px 5px 90px;
+}
+
+.footwhatsapp {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+  fill: #00ac2e;
+}
+
+.cardfoot3:hover {
+  background-color: #4cf64c;
+}
+
+.cardfoot3:hover .whatsapp {
+  fill: white;
+}
+
+.cardfoot4 {
+  border-radius: 5px 5px 90px 5px;
+}
+
+.footgmail {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #cf1305;
+}
+
+.cardfoot4:hover {
+  background-color: #ea5a5c;
+}
+
+.cardfoot4:hover .gmail {
+  fill: white;
+}
+
 
 
 
