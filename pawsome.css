@@ -595,6 +595,24 @@ footer .footer-links li a {
   font-size: 16px;
 }
 
+.footer-links a {
+  color: white; /* Default color */
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+  color: grey; /* Color on hover */
+}
+
+.footer-note {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+
 footer p {
   position: absolute; /* Position it absolutely within the footer */
   bottom: 0; /* Align it to the bottom */
@@ -826,7 +844,7 @@ section .wave2 {
 
 @keyframes animate1 {
     from {
-        transform: translateX(0);
+        transform: translateX(0); 
     }
     to {
         transform: translateX(-50%);
