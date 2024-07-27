@@ -1,114 +1,157 @@
-/* Grid Mixin */
-@mixin grid($val) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-    gap: 1.5rem;
-  }
-  
-  /* Global Styles */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-  
-  /* Global Reset */
-  * {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.2s linear;
-  }
-  
-  /* Colors */
-  :root {
-    --carrot-color: #e67222;
-    --black: #130f40;
-    --white: #fff;
-    --light-color: #666;
-    --light-bg: #eee;
-  }
-  
-  /* Grid Usage */
-  .container {
-    @include grid(300px); /* Adjust value as needed */
-  }
-  
-  /* Additional Global Styles */
-  html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 4rem;
-  }
-  
-  /* Header */
-  .header {
-    background: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 9%;
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1); /* Assuming $box-shadow is defined globally */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-  
-  .logo {
-    font-size: 2.5rem;
-    color: var(--black);
-    font-weight: bolder;
-  }
-  
-  /* Navbar */
-  .navbar {
-    margin: 0 1rem; /* Adjust margin as needed */
-    font-size: 1.7rem;
-    color: var(--light-color);
-  }
-  
-  .navbar:hover {
-    color: var(--carrot-color);
-  }
-  
-  /* Icons */
-  .icons a,
-  .icons div {
-    font-size: 2.5rem;
-    margin-left: 1.5rem;
-    color: var(--black);
-    cursor: pointer;
-  }
-  
-  .icons a:hover,
-  .icons div:hover {
-    color: var(--carrot-color);
-  }
-  
-  /* Login Form */
-  .login-form {
-    position: absolute;
-    top: 120%;
-    right: 2rem;
-    width: 35rem;
-    border-radius: 1rem;
-    background: var(--white);
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1); /* Assuming $box-shadow is defined globally */
-    padding: 2rem;
-  }
-  
-  .login-form p {
-    color: var(--black);
-    font-size: 2.5rem;
-    padding-bottom: 5rem;
-  }
-  
-  /* Menu Button */
-  #menu-btn {
-    display: none;
-  }
-  
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f9fc;
+  color: #333;
+}
+
+.header {
+  background: #0071ce;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 24px;
+  color: #fff;
+}
+
+.nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.search-bar button {
+  background: #ffc220;
+  border: none;
+  padding: 8px;
+  border-radius: 0 4px 4px 0;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.hero-section {
+  background: #f0f8ff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.hero-section h1 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-icons .icon {
+  text-align: center;
+  margin: 0 20px;
+  flex: 1;
+  max-width: 120px;
+}
+
+.hero-icons .icon img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+
+.help-section {
+  text-align: center;
+}
+
+.help-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-help {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.search-help input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-help button {
+  background: #0071ce;
+  border: none;
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+}
+
+.help-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 15px 30px;
+  padding: 20px;
+  text-align: left;
+  width: 300px;
+}
+
+.category h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category ul li {
+  margin-bottom: 10px;
+}
+
+.category ul li a {
+  color: #0071ce;
+  text-decoration: none;
+}
