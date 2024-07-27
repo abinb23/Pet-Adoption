@@ -157,117 +157,76 @@
     background-color: #910ee2 !important;
   }
   
-  /* Header styling */
-
+  /* Main content styling */
+  .main-content {
+    padding: 20px;
+  }
   
-.main-content {
-  padding: 20px;
-}
-
-.breadcrumb {
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #666;
-}
-
-.hero-section {
-  background: #f0f8ff;
-  padding: 40px 20px;
-  text-align: center;
-  border-radius: 8px;
-  margin-bottom: 30px;
-}
-
-.hero-section h1 {
-  margin-top: 0;
-  font-size: 32px;
-}
-
-.hero-section p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.hero-icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hero-icons .icon {
-  text-align: center;
-  margin: 0 20px;
-  flex: 1;
-  max-width: 120px;
-}
-
-.hero-icons .icon img {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 10px;
-}
-
-.help-section {
-  text-align: center;
-}
-
-.help-section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.search-help {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.search-help input {
-  padding: 10px;
-  width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 4px 0 0 4px;
-}
-
-.search-help button {
-  background: #0071ce;
-  border: none;
-  padding: 10px;
-  border-radius: 0 4px 4px 0;
-}
-
-.help-categories {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.category {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 0 15px 30px;
-  padding: 20px;
-  text-align: left;
-  width: 300px;
-}
-
-.category h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.category ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.category ul li {
-  margin-bottom: 10px;
-}
-
-.category ul li a {
-  color: #0071ce;
-  text-decoration: none;
-}
+  .contact-heading {
+    font-size: 32.5px;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px; /* Add top margin */
+    margin-bottom: 60px; /* Add bottom margin */
+    line-height: 1.6; /* Adjust this value to increase or decrease the space between lines */
+  }
+  
+  .social-head {
+    font-weight: bold;
+    color: #ffffff;
+    background: #000000;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 70px; /* Top-left corner */
+    border-top-right-radius: 70px; /* Top-right corner */
+    border-bottom-left-radius: 70px; /* Bottom-left corner */
+    border-bottom-right-radius: 70px; /* Bottom-right corner */
+  }
+  
+  .social-head h2 {
+    margin-top: 10px;
+    margin-bottom: 90px;
+    font-size: 27px;
+  }
+  
+  .social-head p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .app-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .app-icons .icon {
+    text-align: center;
+    margin: 0 60px;
+    flex: 1;
+    max-width: 120px;
+  }
+  
+  .app-icons .icon img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+  
+  /* Uncomment the below section if needed
+  .help-section {
+    text-align: center;
+  }
+  
+  .help-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .search-help {
+    display: flex;
+    justify
+  
