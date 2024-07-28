@@ -1,265 +1,242 @@
+/* Reset and global styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Apply Roboto font to the entire website */
-  body {
-    font-family: "Roboto", sans-serif;
-  }
-  
-  /* Header styling */
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2px 20px; /* Increase the padding for better visibility */
-    background-color: #000;
-    color: #fff;
-    position: relative; /* Add position relative to the header */
-    z-index: 1000; /* Ensure the header stays on top */
-  }
-  
-  .header a.logo-link {
-    margin-right: 50px;
-  }
-  
-  .header img.logo {
-    height: 80px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .header nav {
-    text-align: left;
-  }
-  
-  .header nav a,
-  .header .user-buttons a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
-    display: inline-block;
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 15px;
-  }
-  
-  .header nav a:hover,
-  .header .user-buttons a:hover {
-    background-color: #178b8f;
-    transform: scale(1.1);
-  }
-  
-  .header nav a:hover::before,
-  .header .user-buttons a:hover::before {
-    background-color: #f30101;
-  }
-  
-  .header .user-buttons a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border-radius: 15px;
-    z-index: -1;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .header .login-button,
-  .header .signup-button {
-    background-color: #000000;
-  }
-  
-  .header .user-buttons {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header .user-buttons a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
-    display: inline-block;
-    border: none;
-    font-size: 18px;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 15px;
-  }
-  
-  .header img.logo {
-    width: 90px; /* Adjust the width */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .header img.logo:hover {
-    transform: scale(1.7); /* Increase the scale on hover */
-  }
-  
-  /* Dropdown styling */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #2c2424;
-    min-width: 120px;
-    z-index: 1;
-    color: white;
-    border-radius: 10px; /* Add border-radius to curve corners */
-  }
-  
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: black; /* Change background color on hover to black */
-    color: rgb(255, 255, 255); /* Change text color on hover */
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Adjustments for dropdown button */
-  .dropbtn {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
-    display: inline-block;
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
-    position: relative;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    border-radius: 15px;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #910ee2 !important;
-  }
-  
-  /* Main content styling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    /* socail head styling */
+body {
+  font-family: "Roboto", sans-serif;
+}
 
-  .main-content {
-    padding: 20px;
-  }
-  
-  .contact-heading {
-    font-size: 32.5px;
-    color: #000000;
-    text-align: center;
-    margin-top: 50px; /* Add top margin */
-    margin-bottom: 60px; /* Add bottom margin */
-    line-height: 1.6; /* Adjust this value to increase or decrease the space between lines */
-  }
-  
-  .social-head {
-    font-weight: bold;
-    color: #11e0e0;
-    background: #000000;
-    padding: 40px 20px;
-    text-align: center;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    border-top-left-radius: 100px; /* Top-left corner */
-    border-top-right-radius: 100px; /* Top-right corner */
-    border-bottom-left-radius: 100px; /* Bottom-left corner */
-    border-bottom-right-radius: 100px; /* Bottom-right corner */
-  }
-  
-  .social-head h2 {
-    margin-top: 10px;
-    margin-bottom: 90px;
-    font-size: 27px;
-  }
-  
-  .social-head p {
-    font-size: 15px;
-    margin-bottom: 30px;
-  }
-  
-  .app-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .app-icons .icon {
-    text-align: center;
-    margin: 0 60px;
-    flex: 1;
-    max-width: 120px;
-  }
-  
-  .app-icons .icon img {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 10px;
-  }
+/* Header styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 20px;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  z-index: 1000;
+}
 
-    /* socail head styling */
+.header a.logo-link {
+  margin-right: 50px;
+}
 
-/* founder-head */
+.header img.logo {
+  height: 80px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header nav {
+  text-align: left;
+}
+
+.header nav a,
+.header .user-buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.header nav a:hover,
+.header .user-buttons a:hover {
+  background-color: #178b8f;
+  transform: scale(1.1);
+}
+
+.header nav a:hover::before,
+.header .user-buttons a:hover::before {
+  background-color: #f30101;
+}
+
+.header .user-buttons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 15px;
+  z-index: -1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header .login-button,
+.header .signup-button {
+  background-color: #000000;
+}
+
+.header .user-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header img.logo:hover {
+  transform: scale(1.7);
+}
+
+/* Dropdown styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c2424;
+  min-width: 120px;
+  z-index: 1;
+  color: white;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  position: relative;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.dropdown-content a:hover {
+  background-color: #910ee2 !important;
+}
+
+/* Main content styling */
+.main-content {
+  padding: 20px;
+}
+
+/* Social Head styling */
+.contact-heading {
+  font-size: 32.5px;
+  color: #000000;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+.social-head {
+  font-weight: bold;
+  color: #11e0e0;
+  background: #000000;
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.social-head h2 {
+  margin-top: 10px;
+  margin-bottom: 90px;
+  font-size: 27px;
+}
+
+.social-head p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.app-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app-icons .icon {
+  text-align: center;
+  margin: 0 60px;
+  flex: 1;
+  max-width: 120px;
+}
+
+.app-icons .icon img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+
+/* Founders section styling */
 .founder-row {
   display: flex;
   flex-wrap: wrap;
-  padding: 2em 1em; /* Increased padding */
+  padding: 2em 1em;
   text-align: center;
 }
+
 .founder-column {
   width: 100%;
-  padding: 0.5em 0; /* Increased padding */
+  padding: 0.5em 0;
 }
 
 h1 {
   width: 100%;
   text-align: center;
-  font-size: 3.2em; /* Increased font size */
+  font-size: 3.2em;
   color: #1f003b;
-  margin-bottom: 35px; /* Increased margin for spacing */
-  margin-top: .5em; /* Increased margin for spacing */
+  margin-bottom: 35px;
+  margin-top: 0.5em;
 }
 
 .founder-card {
-  box-shadow: 0 0 2em rgba(25, 0, 58, 0.1); /* Increased shadow */
-  padding: 3em 1em; /* Increased padding */
-  border-radius: 0.6em; /* Increased border radius */
+  box-shadow: 0 0 2em rgba(25, 0, 58, 0.1);
+  padding: 3em 1em;
+  border-radius: 0.6em;
   color: #1f003b;
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   background-color: #ffffff;
 }
+
 .founder-card .founder-img-container {
-  width: 12em; /* Increased size */
-  height: 12em; /* Kept it square */
-  background-color: #149E9E;
-  padding: 0.25em; /* Slightly increased padding */
+  width: 12em;
+  height: 12em;
+  background-color: #149e9e;
+  padding: 0.25em;
   border-radius: 50%;
-  margin: 0 auto 1.8em auto; /* Increased bottom margin */
+  margin: 0 auto 1.8em auto;
   overflow: hidden;
+  transition: transform 0.4s ease-in-out;  /* in picture effect */
 }
+
 .founder-card img {
   width: 100%;
   height: 100%;
@@ -267,46 +244,55 @@ h1 {
   object-fit: cover;
   object-position: center;
 }
+
 .founder-card h3 {
   font-weight: 500;
-  font-size: 1.3em; /* Increased font size */
+  font-size: 1.3em;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .founder-icons {
-  width: 65%; /* Increased width for better spacing */
-  min-width: 160px; /* Increased min-width */
+  width: 65%;
+  min-width: 160px;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
+
 .founder-card a {
   text-decoration: none;
   color: inherit;
-  font-size: 1.3em; /* Increased font size */
+  font-size: 1.3em;
 }
+
 .founder-card:hover {
   background: linear-gradient(#000000, #000000);
   color: #ffffff;
+  box-shadow: 0 0 4em rgba(1, 244, 219, 0.542); /* Added box-shadow effect */
 }
+
 .founder-card:hover .founder-img-container {
-  transform: scale(1.20); /* Slightly increased scale on hover */
+  transform: scale(1.20);
 }
+
+/* Responsive design */
 @media screen and (min-width: 768px) {
   section {
-    padding: 1.2em 6em; /* Increased padding */
+    padding: 1.2em 6em;
   }
 }
+
 @media screen and (min-width: 992px) {
   section {
-    padding: 1em; /* Increased padding */
+    padding: 1em;
   }
   .founder-card {
-    padding: 3.5em 1em; /* Increased padding */
+    padding: 3.5em 1em;
   }
   .founder-column {
     flex: 0 0 33.33%;
     max-width: 33.33%;
-    padding: 0 1em; /* Increased padding */
+    padding: 0 1em;
   }
 }
