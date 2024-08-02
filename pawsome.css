@@ -638,7 +638,7 @@ footer .wave#wave1 {
   z-index: 1000;
   opacity: 1;
   bottom: 0;
-  animation: animatewave 3s linear infinite;
+  animation: animatewave 4s linear infinite;
 }
 
 @keyframes animatewave {
@@ -674,7 +674,7 @@ footer .wave#wave1 {
   gap: 0.5em;
   position: absolute; /* Positioning for placement */
   right: 20px; /* Adjust as needed */
-  bottom: 25px; /* Adjust as needed */
+  bottom: 5px; /* Adjust as needed */
 }
 
 .upfoot, .downfoot {

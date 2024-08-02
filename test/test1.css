@@ -1,50 +1,63 @@
-/* Grid styling */
-  
-.services-section {
-  text-align: center;
-  padding: 30px;
-}
-
-.services-section h1 {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+body {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
 }
 
-.service-item {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  border-radius: 10px;
+.wheel-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: flat;
+  animation: rotateWheel 5s linear infinite;
+  cursor: pointer;
+  position: relative;
+}
+
+.wheel-item {
+  width: 50%;
+  height: 50%;
+  background-color: #61dafb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 0%;
   text-align: center;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s;
+  line-height: 100px; /* Adjust based on your needs */
+  color: #fff;
+  font-weight: bold;
 }
 
-.service-item img {
-  max-width: 100%;
-  border-radius: 10px;
+.wheel-item:nth-child(1) { transform: rotate(0deg) translateX(50%) translateY(-50%); }
+.wheel-item:nth-child(2) { transform: rotate(90deg) translateX(50%) translateY(-50%); }
+.wheel-item:nth-child(3) { transform: rotate(180deg) translateX(50%) translateY(-50%); }
+.wheel-item:nth-child(4) { transform: rotate(270deg) translateX(50%) translateY(-50%); }
+
+@keyframes rotateWheel {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-.service-item h2 {
-  font-size: 20px;
-  margin-top: 10px;
+.wheel-container.active .wheel {
+  animation: none;
+  transform: rotate(0deg);
 }
 
-.service-item:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
+.wheel-container.active .wheel-item {
+  background-color: #ff6347;
+  transition: background-color 0.3s;
 }
