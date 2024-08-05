@@ -4,21 +4,21 @@
   box-sizing: border-box;
 }
 
+/* Apply Roboto font to the entire website */
 body {
   font-family: "Roboto", sans-serif;
 }
 
 /* Header styling */
-
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2px 20px;
+  padding: 2px 20px; /* Increase the padding for better visibility */
   background-color: #000;
   color: #fff;
-  position: relative;
-  z-index: 1000;
+  position: relative; /* Add position relative to the header */
+  z-index: 1000; /* Ensure the header stays on top */
 }
 
 .header a.logo-link {
@@ -83,8 +83,27 @@ body {
   align-items: center;
 }
 
+.header .user-buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  display: inline-block;
+  border: none;
+  font-size: 18px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.header img.logo {
+  width: 90px; /* Adjust the width */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease-in-out;
+}
+
 .header img.logo:hover {
-  transform: scale(1.7);
+  transform: scale(1.7); /* Increase the scale on hover */
 }
 
 /* Dropdown styling */
@@ -100,7 +119,7 @@ body {
   min-width: 120px;
   z-index: 1;
   color: white;
-  border-radius: 10px;
+  border-radius: 10px; /* Add border-radius to curve corners */
 }
 
 .dropdown-content a {
@@ -111,14 +130,15 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: black;
-  color: rgb(255, 255, 255);
+  background-color: black; /* Change background color on hover to black */
+  color: rgb(255, 255, 255); /* Change text color on hover */
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/* Adjustments for dropdown button */
 .dropbtn {
   text-decoration: none;
   color: #fff;
@@ -141,22 +161,29 @@ body {
 
 .container {
   width: 80%;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin: 30px auto;
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
+h1 {
+  font-size: 36px;
   color: #333;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 40px;
-  margin-bottom: 30px;
+h2 {
+  color: #555;
+  margin-bottom: 40px;
   text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .main-content {
@@ -172,46 +199,75 @@ h1 {
   margin-bottom: 20px;
 }
 
-.facts-section, .info-section, .story-section, .additional-info-section, .contact-info-section {
+/* Facts Section Styling */
+.facts-section,
+.info-section,
+.contact-info-section {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .facts-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 10px;
 }
 
 .fact-item {
-  width: 48%;
-  margin-bottom: 10px;
+  flex: 1 1 45%;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
 }
 
+/* Info Section Styling */
 .info-section ul {
   list-style: none;
   padding: 0;
 }
 
 .info-section ul li {
-  margin-bottom: 10px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.social-icons img {
-  width: 24px;
-  height: 24px;
-}
-
-.additional-info-section .notice {
-  border: 1px solid #ccc;
+  background-color: #e0ffe0;
   padding: 10px;
-  background-color: #f8f8f8;
-  margin-top: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  position: relative;
+  padding-right: 30px; /* Add padding to make space for the symbol */
+}
+
+/* Default tick mark */
+.info-section ul li:not(.d1crossed-out)::after {
+  content: "✔";
+  color: #4CAF50;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Cross mark for d1crossed-out items */
+.info-section ul li.d1crossed-out {
+  background-color: #ffe0e0; /* Light red background */
+}
+
+.info-section ul li.d1crossed-out::after {
+  content: "✗";
+  color: #f44336;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Contact Info Section Styling */
+.contact-info-section {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
 }
 
 .contact-info-section .contact-details {
@@ -220,7 +276,14 @@ h1 {
 }
 
 .contact-info-section .contact-item {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.contact-info-section .contact-item strong {
+  display: block;
+  font-weight: bold;
+  color: #333;
 }
 
 .contact-info-section .contact-item a {
