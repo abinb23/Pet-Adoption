@@ -192,15 +192,11 @@ h3 {
   align-items: center;
 }
 
-.image-carousel {
-  margin-bottom: 15px;
-}
-
 .image-carousel img {
-  width: 500px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 /* Facts Section Styling */

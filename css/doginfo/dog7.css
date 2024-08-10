@@ -192,6 +192,7 @@ h3 {
   align-items: center;
 }
 
+
 .image-carousel {
   margin-bottom: 15px;
 }
@@ -202,6 +203,7 @@ h3 {
   object-fit: cover;
   border-radius: 10px;
 }
+
 
 /* Facts Section Styling */
 .facts-section,
