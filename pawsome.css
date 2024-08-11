@@ -635,7 +635,7 @@ footer .wave {
 }
 
 footer .wave#wave1 {
-  z-index: 1000;
+  z-index: 972;
   opacity: 1;
   bottom: 0;
   animation: animatewave 4s linear infinite;
@@ -766,6 +766,36 @@ button {
 .cardfoot4:hover .gmail {
   fill: white;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#scroll {
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  height: 30px;
+  width: 30px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: #08d4a4; /* Background color */
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent; /* Adjust size */
+  border-right: 7px solid transparent; /* Adjust size */
+  border-bottom: 10px solid #000000; /* Arrow color (black) and height */
+}
+
 
 
 /* Footer styling -- social */

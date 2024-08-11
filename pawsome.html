@@ -22,6 +22,9 @@
   <!-- Header Section -->
 
   <div id="header" class="header">
+    <div id="scroll">
+      <div class="arrow"></div>
+    </div> 
     <a href="#" class="logo-link">
       <img src="/images/logo1.png" alt="Pawsome Logo" class="logo" />
     </a>
@@ -323,6 +326,7 @@
 
 
 <!-- Footer section -->
+
 <footer>
   <div class="waves">
       <div class="wave" id="wave1"></div>
@@ -379,8 +383,11 @@
 </div>
 
 <p class="footer-note">© 2024 Pawsome. All rights reserved.</p>
-
+<div id="scrollend"> </div>
+<a href="#" class="back-to-top">
+		<span class="material-icons">arrow_upward</span>
 </footer>
+
 
       <!-- Footer section -->
 
@@ -418,7 +425,30 @@
         prevEl: ".swiper-button-prev",
       },
     });
-  </script>
+
+      let calcScrollValue = () => {
+        let scrollProgress = document.getElementById("scroll");
+        let progressValue = document.getElementById("scrollend");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100) / calcHeight);
+        if (pos > 100) {
+          scrollProgress.style.display = "grid";
+        } else {
+          scrollProgress.style.display = "none";
+        }
+        scrollProgress.addEventListener("click", () => {
+          document.documentElement.scrollTop = 0;
+        });
+        scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+      };
+
+      window.onscroll = calcScrollValue;
+      window.onload = calcScrollValue;
+    </script>
+  
 
       <!-- Slider section -->
 
