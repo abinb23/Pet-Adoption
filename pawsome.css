@@ -521,8 +521,10 @@ body {
   border-color: #ffffff; /* White color */
 }
 
+/* Testimonial Section Styling */
 
 /* Footer styling */
+
 footer {
   position: relative;
   width: 100%;
@@ -767,6 +769,10 @@ button {
   fill: white;
 }
 
+/* Footer styling */
+
+/* Arrow to top styling */
+
 html {
   scroll-behavior: smooth;
 }
@@ -796,12 +802,7 @@ html {
   border-bottom: 10px solid #000000; /* Arrow color (black) and height */
 }
 
-
-
-/* Footer styling -- social */
-
-
-/* Footer styling */
+/* Arrow to top styling */
 
 
 
@@ -836,82 +837,3 @@ html {
 } */ 
 
 /* Dog-Toggle styling */
-
-
-/* Wavy Banner Effects */
-
-/* section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #3586ff;
-    overflow: hidden;
-}
-
-section .wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 200%;
-    height: 100px;
-    background: url(wave.png) repeat-x;
-    background-size: 45% 100px; 
-    opacity: 1;
-}
-
-section .wave1 {
-    animation: animate1 20s linear infinite;
-    z-index: 1000;
-}
-
-section .wave2 {
-    animation: animate2 13s linear infinite;
-    z-index: 999;
-    opacity: 0.5;
-    animation-delay: -1s;
-    bottom: 30px;
-}
-
-@keyframes animate1 {
-    from {
-        transform: translateX(0); 
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-@keyframes animate2 {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-} */
-
-
-
-
-/* Video section styling */
-
-/* .home-video-1 {
-  margin-top: 100px;
-  position: relative;
-  width: 100%;
-  height: 800px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home-video-1 video {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-  object-fit: cover; 
-}
-
-/* Video section styling */
-
