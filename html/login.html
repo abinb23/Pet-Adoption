@@ -3,159 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <!-- Favicon -->
-    <link rel="icon" href="/images/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <title>Login Page</title>
   </head>
+
   <body>
-    <div class="header">
-      <a href="/pawsome.html" class="logo-link">
-        <img src="/images/logo1.png" alt="Pawsome Logo" class="logo" />
-      </a>
-      <nav>
-        <a href="/pawsome.html">Home</a>
-        <div class="dropdown">
-          <a href="/html/Services.html" class="dropbtn">Services</a>
-          <div class="dropdown-content">
-            <a href="/html/catsanddogs.html">Adoption</a>
-            <a href="#">Grooming</a>
-            <a href="#">Training</a>
-            <a href="#">Veterinary</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <a href="/html/pets.html" class="dropbtn">Pets</a>
-          <div class="dropdown-content">
-            <a href="/html/dogdetails.html">Dogs</a>
-            <a href="/html/catdetails.html">Cats</a>
-            <a href="#">Birds</a>
-            <a href="#">Fish</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <a href="#" class="dropbtn">Foods</a>
-          <div class="dropdown-content">
-            <a href="#">Dry</a>
-            <a href="#">Wet</a>
-            <a href="#"> Treats</a>
-            <a href="#">Special</a>
-          </div>
-        </div>
-        <a href="/html/contactus.html">Contact Us</a>
-      </nav>
-      <div class="user-buttons">
-        <a href="#" class="login-button" id="loginBtn">Login</a>
-        <a href="#" class="signup-button" id="registerBtn">Sign Up</a>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form>
+          <h1>Create Account</h1>
+          <div class="social-icons"></div>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button>Sign Up</button>
+        </form>
       </div>
-    </div>
-
-    <div class="wrapper">
-      <div class="form-box">
-        <!-- Login form -->
-        <div class="login-container" id="login">
-          <div class="top">
-            <span .
-              >Don't have an account?
-              <a href="#" onclick="register()">Sign Up</a></span
-            >
-            <header>Login</header>
+      <div class="form-container sign-in">
+        <form>
+          <h1>Sign In</h1>
+          <div class="social-icons"></div>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">Forget Your Password?</a>
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Welcome Back!</h1>
+            <p>Enter your personal details to use all of site features</p>
+            <button class="hidden" id="login">Sign In</button>
           </div>
-          <div class="input-box">
-            <input
-              type="text"
-              class="input-field"
-              placeholder="Username or Email"
-            />
-            <i class="bx bx-user"></i>
-          </div>
-          <div class="input-box">
-            <input type="password" class="input-field" placeholder="Password" />
-            <i class="bx bx-lock-alt"></i>
-          </div>
-          <div class="input-box">
-            <input type="submit" class="submit" value="Sign In" />
-          </div>
-          <div class="two-col">
-            <div class="one">
-              <input type="checkbox" id="login-check" />
-              <label for="login-check"> Remember Me</label>
-            </div>
-            <div class="two">
-              <label><a href="#">Forgot password?</a></label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Registration form -->
-        <div class="register-container" id="register">
-          <div class="top">
-            <span
-              >Have an account? <a href="#" onclick="login()">Login</a></span
-            >
-            <header>Sign Up</header>
-          </div>
-          <div class="two-forms">
-            <div class="input-box">
-              <input type="text" class="input-field" placeholder="Firstname" />
-              <i class="bx bx-user"></i>
-            </div>
-            <div class="input-box">
-              <input type="text" class="input-field" placeholder="Lastname" />
-              <i class="bx bx-user"></i>
-            </div>
-          </div>
-          <div class="input-box">
-            <input type="text" class="input-field" placeholder="Email" />
-            <i class="bx bx-envelope"></i>
-          </div>
-          <div class="input-box">
-            <input type="password" class="input-field" placeholder="Password" />
-            <i class="bx bx-lock-alt"></i>
-          </div>
-          <div class="input-box">
-            <input type="submit" class="submit" value="Register" />
-          </div>
-          <div class="two-col">
-            <div class="one">
-              <input type="checkbox" id="register-check" />
-              <label for="register-check"> Remember Me</label>
-            </div>
-            <div class="two">
-              <label><a href="#">Terms & conditions</a></label>
-            </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Hello, Friend!</h1>
+            <p>
+              Register with your personal details to use all of site features
+            </p>
+            <button class="hidden" id="register">Sign Up</button>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
 
     <script>
-      var a = document.getElementById("loginBtn");
-      var b = document.getElementById("registerBtn");
-      var x = document.getElementById("login");
-      var y = document.getElementById("register");
+      const container = document.getElementById("container");
+      const registerBtn = document.getElementById("register");
+      const loginBtn = document.getElementById("login");
 
-      function login() {
-        x.style.left = "4px";
-        y.style.right = "-520px";
-        a.className += " white-btn";
-        b.className = "btn";
-        x.style.opacity = 1;
-        y.style.opacity = 0;
-      }
+      registerBtn.addEventListener("click", () => {
+        container.classList.add("active");
+      });
 
-      function register() {
-        x.style.left = "-510px";
-        y.style.right = "5px";
-        a.className = "btn";
-        b.className += " white-btn";
-        x.style.opacity = 0;
-        y.style.opacity = 1;
-      }
+      loginBtn.addEventListener("click", () => {
+        container.classList.remove("active");
+      });
     </script>
   </body>
 </html>
