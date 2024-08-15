@@ -1,67 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scroll To Top With Scroll scroll</title>
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
+    <title>Service Packages</title>
     <link rel="stylesheet" href="/test/test1.css" />
   </head>
   <body>
-    <div id="scroll">
-      <span id="scroll-end">&#x1F815;</span>
-    </div>
-    <h1>Back To Top Button</h1>
-    <h3>With Scroll scroll</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam unde
-      cupiditate nobis incidunt molestias rem aliquam nisi, nihil non eius
-      blanditiis eveniet veritatis, quam architecto cum quod maiores facere
-      atque, alias neque minus hic asperiores! Qui, harum iste, optio nam
-      dolorum molestias impedit ipsum quos non magnam quaerat error
-      necessitatibus, officiis nostrum minus maiores iusto accusantium sint
-      atque pariatur. Recusandae facere facilis ab cupiditate reiciendis. Ut
-      reiciendis iusto non eligendi saepe iure, itaque, odio facere laboriosam
-      qui voluptatibus id assumenda totam fugit, numquam temporibus ad sint
-      voluptatum tenetur unde illo. Pariatur nesciunt, perspiciatis rerum
-      voluptates voluptatum consequuntur placeat autem deserunt.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed
-      perspiciatis rerum ea quia nostrum, quod sit dolorem, illum officia
-      inventore, maiores ipsum voluptas aut facere? Quos, autem odit nostrum
-      ipsam recusandae nulla, labore assumenda voluptatibus quas quisquamus officiis placeat commodi molestias, velit dolor ab quibusdam
-      nostrum numquam optio asperiores impedit perspiciatis consequuntur iusto
-      labor ab laboriosam, quos error enim ut officiis inventore
-      accusamus!
-    </p>
-    <!-- Script -->
-    <script>
-      let calcScrollValue = () => {
-        let scrollProgress = document.getElementById("scroll");
-        let progressValue = document.getElementById("scroll-end");
-        let pos = document.documentElement.scrollTop;
-        let calcHeight =
-          document.documentElement.scrollHeight -
-          document.documentElement.clientHeight;
-        let scrollValue = Math.round((pos * 100) / calcHeight);
-        if (pos > 100) {
-          scrollProgress.style.display = "grid";
-        } else {
-          scrollProgress.style.display = "none";
-        }
-        scrollProgress.addEventListener("click", () => {
-          document.documentElement.scrollTop = 0;
-        });
-        scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-      };
 
-      window.onscroll = calcScrollValue;
-      window.onload = calcScrollValue;
-    </script>
-  </body>
-</html>
