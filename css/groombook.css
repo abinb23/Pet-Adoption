@@ -1,0 +1,312 @@
+/* Reset and Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 20px;
+    background-color: #000;
+    color: #fff;
+    position: fixed; /* Changed to fixed to stay on top */
+    top: 0; /* Aligns it to the top */
+    width: 100%; /* Ensures it spans the full width */
+    z-index: 1000;
+}
+
+.header a.logo-link {
+    margin-right: 50px;
+}
+
+.header img.logo {
+    height: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header nav {
+    text-align: left;
+}
+
+.header nav a,
+.header .user-buttons a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.header nav a:hover,
+.header .user-buttons a:hover {
+    background-color: #178b8f;
+    transform: scale(1.1);
+}
+
+.header nav a:hover::before,
+.header .user-buttons a:hover::before {
+    background-color: #f30101;
+}
+
+.header .user-buttons a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 15px;
+    z-index: -1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header .login-button,
+.header .signup-button {
+    background-color: #000000;
+}
+
+.header .user-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header img.logo:hover {
+    transform: scale(1.7);
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2c2424;
+    min-width: 120px;
+    z-index: 1;
+    color: white;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    position: relative;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: #910ee2 !important;
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+    font-size: 30px;
+    color: #6c63ff; /* Dark gray text color */
+    text-align: center; /* Center align the text */
+    margin-top: 60px;
+    padding: 10px; /* Add some padding */
+}
+
+/* Form Container Styling */
+.form-container {
+    margin: 70px auto 0; /* Adjust margin for vertical centering */
+    position: relative; /* Changed to relative to avoid using absolute positioning */
+    width: 60%;
+    background: linear-gradient(135deg, #f6f7fb, #ffffff);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 50px;
+}
+
+/* Heading Styling */
+h2 {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    animation: slideDown 0.8s ease;
+    transition: color 0.3s ease;
+    margin-bottom: 70px;
+}
+
+h2:hover {
+    color: #6c63ff;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease;
+    width: 100%; /* Ensure full width for form groups */
+}
+
+/* Label Styling */
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1rem; /* Adjust size as needed */
+    display: block; /* Ensure label takes up the full width */
+    width: 100%; /* Ensure label takes up the full width */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+
+.form-group label:hover {
+    color: #6c63ff; /* Change color on hover */
+    transform: translateY(-3px); /* Slightly move up on hover */
+}
+
+/* Input and Textarea Styling */
+input[type="text"], input[type="email"], select, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Ensure inputs and textareas take up the full width */
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Special styling for the large input */
+.large-input {
+    font-size: 15px; /* Increase font size for better readability */
+    padding: 12px; /* Increase padding for a larger input box */
+    /* border-radius: 5px; */
+}
+
+/* Hover Animation for Inputs and Textareas */
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+select:hover, 
+textarea:hover,
+.large-input:hover { /* Add hover effect for the large input */
+    border-color: #6c63ff; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5); /* Add shadow on hover */
+}
+
+/* Adjust margin for better spacing */
+.form-group input[type="text"], 
+.form-group input[type="email"], 
+.form-group select, 
+.form-group textarea,
+.form-group .large-input { /* Include the large input in spacing adjustments */
+    margin-bottom: 10px; /* Add space below input fields */
+}
+
+/* Media Query for Responsive Design */
+@media (min-width: 768px) {
+    .form-group {
+        flex-direction: row;
+        align-items: center; /* Align items vertically center */
+    }
+    .form-group label, 
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+        flex: 1; /* Allow flex items to grow */
+        margin-right: 10px; /* Add space between label and input */
+    }
+    .form-group:last-child label, 
+    .form-group:last-child input, 
+    .form-group:last-child select, 
+    .form-group:last-child textarea {
+        margin-right: 0; /* Remove margin on the last item */
+    }
+}
+
+/* Submit Button Styling */
+.submit-group {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    margin-top: 20px; /* Space above the button */
+}
+
+button[type="submit"] {
+    padding: 19px 40px;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 15px rgba(108, 99, 255, 0.2);
+    outline: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #5548c8;
+    transform: translateY(-3px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
