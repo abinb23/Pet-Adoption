@@ -144,7 +144,7 @@ body {
 /* Welcome Message Styling */
 .welcome-message {
     font-size: 30px;
-    color: #333; /* Dark gray text color */
+    color: #6c63ff; /* Dark gray text color */
     text-align: center; /* Center align the text */
     margin-top: 60px;
     padding: 10px; /* Add some padding */
@@ -206,6 +206,12 @@ h2:hover {
     font-size: 1rem; /* Adjust size as needed */
     display: block; /* Ensure label takes up the full width */
     width: 100%; /* Ensure label takes up the full width */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+
+.form-group label:hover {
+    color: #6c63ff; /* Change color on hover */
+    transform: translateY(-3px); /* Slightly move up on hover */
 }
 
 /* Input and Textarea Styling */
@@ -217,6 +223,15 @@ input[type="text"], input[type="email"], select, textarea {
     width: 100%; /* Ensure inputs and textareas take up the full width */
     transition: all 0.3s ease;
     outline: none;
+}
+
+/* Hover Animation for Inputs and Textareas */
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+select:hover, 
+textarea:hover {
+    border-color: #6c63ff; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5); /* Add shadow on hover */
 }
 
 /* Adjust margin for better spacing */
