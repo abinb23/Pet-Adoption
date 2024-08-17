@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Header styling */
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 20px;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .header a.logo-link {
+    margin-right: 50px;
+  }
+  
+  .header img.logo {
+    height: 80px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .header nav {
+    text-align: left;
+  }
+  
+  .header nav a,
+  .header .user-buttons a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+  }
+  
+  .header nav a:hover,
+  .header .user-buttons a:hover {
+    background-color: #178b8f;
+    transform: scale(1.1);
+  }
+  
+  .header nav a:hover::before,
+  .header .user-buttons a:hover::before {
+    background-color: #f30101;
+  }
+  
+  .header .user-buttons a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 15px;
+    z-index: -1;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .header .login-button,
+  .header .signup-button {
+    background-color: #000000;
+  }
+  
+  .header .user-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header img.logo:hover {
+    transform: scale(1.7);
+  }
+  
+  /* Dropdown styling */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2c2424;
+    min-width: 120px;
+    z-index: 1;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropbtn {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    position: relative;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 15px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #910ee2 !important;
+  }
+  
+  /* Header end styling */
+
+h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+/* Dog Training Importance Section */
+.dogtrain-training-importance {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.dogtrain-training-importance h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.dogtrain-training-importance p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.dogtrain-training-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dogtrain-benefit {
+    background-color: #000000;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 22%; /* This ensures that the boxes grow and shrink properly */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.dogtrain-benefit img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.dogtrain-benefit-info h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.dogtrain-benefit-info p {
+    font-size: 16px;
+    color: #dfec22;
+    margin-top: 10px;
+}
+
+.dogtrain-benefit:hover {
+    transform: scale(1.05);
+}
+
+/* Dog Training Packages Section */
+.dogtrain-training-packages {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.dogtrain-training-packages h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #444;
+}
+
+.dogtrain-packages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dogtrain-package-card {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 22%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.dogtrain-package-card:hover {
+    transform: translateY(-10px);
+}
+
+.dogtrain-package-header img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.dogtrain-package-header h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dogtrain-package-header p {
+    font-size: 20px;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.dogtrain-course-duration,
+.dogtrain-training-sessions {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+ul li i {
+    color: #27ae60;
+    margin-right: 10px;
+}
+
+.dogtrain-course-button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.dogtrain-course-button:hover {
+    background-color: #2ecc71;
+}
+
+/* Ribbon for New Course */
+.dogtrain-ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.dogtrain-ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 10px 0;
+    background-color: #e67e22;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(45deg);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}

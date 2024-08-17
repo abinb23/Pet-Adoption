@@ -523,111 +523,23 @@ body {
 
 /* Testimonial Section Styling */
 
-/* Footer styling */
+/* Footer wave styling */
 
 footer {
   position: relative;
   width: 100%;
   background: #000000;
   min-height: 100px;
-  padding: 3px 50px;
+  padding: 17px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 0px;
 }
 
-footer .social_icon,
-footer .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-}
-
-footer .social_icon li,
-footer .menu li {
-  list-style: none;
-}
-
-footer .social_icon li a {
-  font-size: 2em;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-}
-
-footer .social_icon li a:hover {
-  transform: translateY(-10px);
-}
-
-footer .menu li a {
-  font-size: 1.2em;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  text-decoration: none;
-  opacity: 0.75;
-}
-
-footer .menu li a:hover {
-  opacity: 1;
-}
-
-footer .footer-links {
-  display: flex;
-  flex-direction: column; /* Display list items vertically */
-  align-items: flex-start; /* Align to the left */
-  width: 104%;
-  padding-left: -10px; /* Add padding to match footer padding */
-  margin-top: 100px;
-  margin: 0; /* Remove default margin */
-}
-
-footer .footer-links li {
-  list-style: none;
-  margin-bottom: 10px; /* Add space between items */
-}
-
-footer .footer-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.footer-links a {
-  color: white; /* Default color */
-  text-decoration: none;
-  margin: 0 10px;
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.footer-links a:hover {
-  color: grey; /* Color on hover */
-}
-
-.footer-note {
-  text-align: center;
-  color: white;
-  margin-top: 20px;
-}
-
-
-footer p {
-  position: absolute; /* Position it absolutely within the footer */
-  bottom: 0; /* Align it to the bottom */
-  width: 100%; /* Make it span the full width */
-  color: #ffffff; /* Text color */
-  text-align: center; /* Center align the text */
-  margin: 0; /* Remove all margins */
-  font-size: 1em; /* Font size */
-}
-
 footer .wave {
   position: absolute;
-  top: -100px; /* Adjusted to place the wave above the footer */
+  top: -70px; /* Adjusted to place the wave above the footer */
   left: 0;
   width: 100%;
   height: 100px;
@@ -652,122 +564,182 @@ footer .wave#wave1 {
   }
 }
 
-.zoom li a {
-  transition: 1s;
+/* Footer styling */
+
+.footer {
+  margin-top: 0px;
+  margin-right: 50px;
+  background-color: #000000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
 }
 
-.zoom li a:hover {
-  transform: scale(1.1);
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0px;
+  padding-top: 0px;
 }
 
+.footer-bottom p {
+  margin-top: 15px; /* Adds space above the text */
+  margin-bottom: 0px;
+}
 
-/* Footer styling -- social */
+.footer-col {
+  width: 30%;
+}
 
-.position-container {
+/* Separate styles for each title */
+.company-title {
+    margin-top: -20px;
+  font-size: 19px;
+  margin-right: 600px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 500;
   position: relative;
-  height: 100vh; /* Adjust as needed */
-  width: 100vw; /* Adjust as needed */
+  padding-top: 0px; /* Increase this to move the text further down */
+
 }
 
-/* Main footer styles */
-.mainfoot {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  position: absolute; /* Positioning for placement */
-  right: 20px; /* Adjust as needed */
-  bottom: 5px; /* Adjust as needed */
+.features-title {
+  padding-left: 140px;
+  margin-top: -20px;
+  font-size: 19px;
+  margin-right: 00px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 500;
+  position: relative;
 }
 
-.upfoot, .downfoot {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5em;
+.follow-title {
+  margin-top: -20px;
+  font-size: 19px;
+  margin-left: 290px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 500;
+  position: relative;
 }
 
-button {
-  width: 50px;
-  height: 50px;
-  outline: none;
-  border: none;
-  background: white;
-  border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .2s ease-in-out;
-  cursor: pointer;
+/* Separate underlines for each title */
+.company-title::after {
+  content: '';
+  position: absolute;
+  margin-right: 600px;
+  bottom: -5px;
+  background-color: #e91e63;
+  height: 2px;
+  width: 95px;
 }
 
-.cardfoot1 {
-  border-radius: 90px 5px 5px 5px;
+.features-title::after {
+  margin-left: -100px;
+  content: '';
+  position: absolute;
+  margin-right: 600px;
+  bottom: -5px;
+  background-color: #e91e63;
+  height: 2px;
+  width: 100px;
 }
 
-.footinstagram {
-  margin-top: 1.2em;
-  margin-left: 1.2em;
-  fill: #000000;
+.follow-title::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  background-color: #e91e63;
+  height: 2px;
+  width: 120px;
 }
 
-.cardfoot1:hover {
-  background-color: #ff00bb;
+/* Separate list styling for each section */
+.company-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 0px;
 }
 
-.cardfoot1:hover .instagram {
-  fill: white;
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 160px;
 }
 
-.cardfoot2 {
-  border-radius: 5px 90px 5px 5px;
+.follow-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 300px;
 }
 
-.footfacebook {
-  margin-top: 1.3em;
-  margin-left: -1em;
-  fill: #000000;
+.company-list li, .features-list li, .follow-list a {
+  margin-bottom: 8px;
 }
 
-.cardfoot2:hover {
-  background-color: #2e82f0;
+.company-list li a, .features-list li a, .follow-list a {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #bbbbbb;
+  text-decoration: none;
+  font-weight: 300;
+  transition: all 0.3s ease;
 }
 
-.cardfoot2:hover .facebook {
-  fill: white;
+.company-list li a:hover, .features-list li a:hover, .follow-list a:hover {
+  color: #ffffff;
+  padding-left: 8px;
 }
 
-.cardfoot3 {
-  border-radius: 5px 5px 5px 90px;
+/* Social links specific styles */
+.follow-list a {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
 }
 
-.footwhatsapp {
-  margin-top: -1.em;
-  margin-left: 1.2em;
-  fill: #000000;
+.follow-list a:hover {
+  color: #24262b;
+  background-color: #ffffff;
 }
 
-.cardfoot3:hover {
-  background-color: #00ff00;
+/* Footer bottom text */
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px; /* Increase this to move the text further down */
+  font-size: 14px;
 }
 
-.cardfoot3:hover .whatsapp {
-  fill: white;
+@media (max-width: 767px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer-col {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  .footer-col h4 {
+      text-align: center;
+  }
 }
 
-.cardfoot4 {
-  border-radius: 5px 5px 90px 5px;
-}
-
-.footgmail {
-  margin-top: 1.5.em;
-  margin-left: -1em;
-  fill: #000000;
-}
-
-.cardfoot4:hover {
-  background-color: #ff0004;
-}
-
-.cardfoot4:hover .gmail {
-  fill: white;
-}
 
 /* Footer styling */
 
@@ -837,3 +809,5 @@ html {
 } */ 
 
 /* Dog-Toggle styling */
+
+
