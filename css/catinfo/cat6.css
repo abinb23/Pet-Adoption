@@ -298,3 +298,29 @@ h3 {
 .contact-info-section .contact-item a:hover {
   text-decoration: underline;
 }
+
+/* Footer styling */
+.footer {
+  margin-top: 200px;
+  background-color: #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+
+/* Footer bottom text */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
