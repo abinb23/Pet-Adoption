@@ -145,67 +145,169 @@ h2 {
 }
 
 /* Dog Training Importance Section */
+
 .dogtrain-training-importance {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
+  background-image: url('/images/dogs/52.jpg');
+  background-size: cover; /* Ensures the background covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 20px; /* Adds some padding around the content */
+  color: white; /* Ensures the text is readable over the background image */
+  padding: 345px 0px;
+  padding-right: 600px;
+  background-color: #fff;
+  text-align: center;
 }
 
+
 .dogtrain-training-importance h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #444;
+    font-size: 45px;
+    margin-top: -190px;
+    padding-bottom: 10px;
+    color: #000000;
 }
 
 .dogtrain-training-importance p {
-    font-size: 18px;
-    color: #777;
-    margin-bottom: 30px;
+    font-size: 20px;
+    color: #0d0d0d;
+    margin-bottom: 20px;
 }
 
+
+
+.trainersdetails-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.trainersdetails-container h2 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 35px;
+}
+
+.trainersdetails-scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.trainersdetails-scroll-container {
+  display: flex;
+  gap: 22px;
+  animation: scroll 40s linear infinite;
+}
+
+.trainersdetails-card {
+  min-width: 270px; /* Increased width */
+  border-radius: 8px;
+  text-align: center;
+  flex-shrink: 0;
+  background-color: #f9f9f9;
+  padding: 25px; /* Increased padding */
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trainersdetails-card img {
+  width: 160px; /* Increased width */
+  height: 160px; /* Increased height */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.trainersdetails-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.trainersdetails-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+.dogtrain-heading {
+  font-size: 2.5rem; /* Adjust the size as needed */
+  color: #000; /* You can choose a different color if needed */
+  text-align: center;
+  margin-bottom: 90px; /* Adjust spacing between the heading and the content */
+  margin-top: 120px; /* Adjust spacing between the heading and the content */
+  position: relative; /* Required for the pseudo-element positioning */
+}
+
+.dogtrain-heading::after {
+  content: "";
+  position: absolute;
+  margin-left: -470px;
+  bottom: -10px; /* Position the underline below the text */
+  width: 32%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #000; /* Color of the underline */
+}
+
+
 .dogtrain-training-benefits {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px; /* Adjust if needed to position correctly under the heading */
 }
 
 .dogtrain-benefit {
-    background-color: #000000;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    flex: 1 1 22%; /* This ensures that the boxes grow and shrink properly */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
+  background-color: #000000;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  flex: 1 1 22%; /* This ensures that the boxes grow and shrink properly */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 
 .dogtrain-benefit img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .dogtrain-benefit-info h3 {
-    margin-top: 15px;
-    font-size: 20px;
-    color: #fff;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
 }
 
 .dogtrain-benefit-info p {
-    font-size: 16px;
-    color: #dfec22;
-    margin-top: 10px;
+  font-size: 16px;
+  color: #858585;
+  margin-top: 10px;
 }
 
 .dogtrain-benefit:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
+
+
+
 
 /* Dog Training Packages Section */
 .dogtrain-training-packages {
+  margin-top: 80px;
     padding: 50px 20px;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 
 .dogtrain-training-packages h2 {
