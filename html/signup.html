@@ -7,8 +7,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="/css/login.css" />
-    <title>Pawsome - Login</title>
+    <link rel="stylesheet" href="/css/signup.css" />
+    <title>Pawsome - Signup</title>
     <link rel="icon" href="/images/fav.png"type="image/x-icon">
   </head>
 
@@ -68,6 +68,11 @@
       const container = document.getElementById("container");
       const registerBtn = document.getElementById("register");
       const loginBtn = document.getElementById("login");
+
+      // Add this line to set the default to the Sign Up form
+      window.onload = () => {
+        container.classList.add("active");
+      };
 
       registerBtn.addEventListener("click", () => {
         container.classList.add("active");
